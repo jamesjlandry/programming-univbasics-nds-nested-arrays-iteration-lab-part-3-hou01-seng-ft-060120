@@ -11,7 +11,7 @@ def join_nested_strings(src)
               string_values = [outer_index][inner_index]
             end
             inner_index += 1
-            string_values << new_string
+            string_values << new_string[outer][inner_index]
           end
         outer_index += 1
       end
