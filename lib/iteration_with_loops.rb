@@ -5,7 +5,7 @@ def join_nested_strings(src)
   new_string = []
       while outer_index < src.count do
         inner_index = 0
-        string_values = []
+        string_values = ""
           while inner_index < src[outer_index].count do
             if src[outer_index][inner_index].class == String 
               string_values = [outer_index][inner_index]
