@@ -8,7 +8,7 @@ def join_nested_strings(src)
         string_values = ""
           while inner_index < src[outer_index].count do
             if src[outer_index][inner_index].class == String 
-              new_string << src[outer_index][inner_index] + ""
+              new_string << src[outer_index][inner_index] + " "
             end
             inner_index += 1
             
