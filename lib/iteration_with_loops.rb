@@ -2,16 +2,15 @@ def join_nested_strings(src)
   # src will be an Array of Arrays of Strings and Integers
   # Combine all Strings present in the AoA into a single value and return it
   outer_index = 0
-  new_string = ""
+  new_string = []
       while outer_index < src.count do
         inner_index = 0
         
           while inner_index < src[outer_index].count do
-            if src[outer_index][inner_index].is_a String?<<
+            if src[outer_index][inner_index].is_a String?<< new_string
             end
             inner_index += 1
-            end
-           
+          end
         outer_index += 1
       end
      new_string
