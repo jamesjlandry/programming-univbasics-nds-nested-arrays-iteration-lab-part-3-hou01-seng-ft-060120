@@ -7,7 +7,7 @@ def join_nested_strings(src)
         inner_index = 0
         
           while inner_index < src[outer_index].count do
-            if src[outer_index][inner_index].class == String new_string
+            if src[outer_index][inner_index].class == String 
             end
             inner_index += 1
           end
